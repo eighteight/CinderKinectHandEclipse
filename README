@@ -1,5 +1,5 @@
 Install openni and NITE from unstable branch
 Correct path to the Sample-Config.xml file
 Run KinectHand application
-Wave or "click in front of the connected kinect -- this should start hand tracking
+"Wave" or "click" in front of the connected kinect -- this should start hand tracking
 Observe the hand tracking data change in your console

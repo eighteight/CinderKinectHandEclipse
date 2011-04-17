@@ -51,7 +51,6 @@ xn::DepthGenerator g_DepthGenerator;
 
 // NITE objects
 XnVSessionManager* g_pSessionManager;
-XnVFlowRouter* g_pFlowRouter;
 
 SessionState g_SessionState = NOT_IN_SESSION;
 
@@ -120,6 +119,7 @@ void KinectHand::setup()
 void KinectHand::update() {
 	XnStatus nRetVal = context.WaitAnyUpdateAll();
     CHECK_RC(nRetVal, "Wait and Update");
+	g_pSessionManager->Update(&context);
 }
 
 void KinectHand::draw() {
