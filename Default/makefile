@@ -44,7 +44,7 @@ all: CinderKinectHandEclipse
 CinderKinectHandEclipse: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++ -L"/Users/boba/Documents/workspace/CinderKinectHandEclipse/libs" -arch i386 -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework Syphon -Xlinker /Users/boba/repos/Cinder/lib/libcinder_d.a /Users/boba/repos/Cinder/blocks/Cinder-OpenCV/lib/macosx/libcv.a /Users/boba/repos/Cinder/blocks/Cinder-OpenCV/lib/macosx/libcxcore.a -o "CinderKinectHandEclipse" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/Users/gusev/Documents/workspace/CinderKinectHandEclipse/libs" -L"/Users/gusev/repos/Nite-1.3.1.5/bin" -L"/Users/gusev/repos/Nite-1.3.1.5/Features_1_3_1/Bin" -L"/Users/gusev/repos/Nite-1.3.1.5/Hands_1_3_1/Bin" -arch i386 -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -Xlinker /Users/gusev/repos/Cinder/lib/libcinder_d.a /Users/gusev/repos/Cinder/blocks/Cinder-OpenCV/lib/macosx/libcv.a /Users/gusev/repos/Cinder/blocks/Cinder-OpenCV/lib/macosx/libcxcore.a -o "CinderKinectHandEclipse" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

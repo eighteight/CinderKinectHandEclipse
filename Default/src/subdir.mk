@@ -17,7 +17,7 @@ CPP_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I/Users/boba/repos/Cinder/boost -I/Users/boba/repos/Cinder/blocks/Cinder-OpenCV/include -I/Users/boba/repos/Cinder/include -I"/Users/boba/Documents/workspace/CinderKinectHandEclipse/includes/OpenNI" -I"/Users/boba/Documents/workspace/CinderKinectHandEclipse/includes" -O0 -g -Wall -c -fmessage-length=0 -arch i386 -x objective-c++ -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	g++ -I/Users/gusev/repos/Cinder/boost -I"/Users/gusev/repos/Nite-1.3.1.5/include" -I/Users/gusev/repos/Cinder/blocks/Cinder-OpenCV/include -I/Users/gusev/repos/Cinder/include -I"/Users/gusev/Documents/workspace/CinderKinectHandEclipse/includes/OpenNI" -I"/Users/gusev/Documents/workspace/CinderKinectHandEclipse/includes" -O0 -g -Wall -c -fmessage-length=0 -arch i386 -x objective-c++ -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

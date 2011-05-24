@@ -22,7 +22,7 @@ using namespace ci::app;
 using namespace std;
 using namespace xn;
 
-#define SAMPLE_XML_PATH "/Users/boba/repos/Nite-1.3.0.18/Data/Sample-Tracking.xml"
+#define SAMPLE_XML_PATH "/Users/gusev/repos/Nite-1.3.1.5/Data/Sample-Tracking.xml"
 #define CHECK_RC(rc, what)                                   \
 if (rc != XN_STATUS_OK)                                      \
 {                                                            \

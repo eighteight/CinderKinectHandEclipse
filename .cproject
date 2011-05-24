@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?fileVersion 4.0.0?>
-
-<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<?xml version="1.0" encoding="UTF-8"?><?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="cdt.managedbuild.toolchain.gnu.macosx.base.1873825215">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.macosx.base.1873825215" moduleId="org.eclipse.cdt.core.settings" name="Default">
 				<macros>
-					<stringMacro name="CINDER_PATH" type="VALUE_PATH_DIR" value="/Users/boba/repos/Cinder"/>
+					<stringMacro name="CINDER_PATH" type="VALUE_PATH_DIR" value="/Users/gusev/repos/Cinder"/>
+					<stringMacro name="NITE_PATH" type="VALUE_TEXT" value="/Users/${LOGNAME}/repos/Nite-1.3.1.5"/>
 				</macros>
 				<externalSettings/>
 				<extensions>
@@ -28,18 +26,21 @@
 							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.293963466" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base">
 								<option id="macosx.cpp.link.option.paths.606959176" name="Library search path (-L)" superClass="macosx.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NITE_PATH}/bin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NITE_PATH}/Features_1_3_1/Bin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NITE_PATH}/Hands_1_3_1/Bin&quot;"/>
 								</option>
 								<option id="macosx.cpp.link.option.libs.1593998636" name="Libraries (-l)" superClass="macosx.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="OpenNI"/>
-									<listOptionValue builtIn="false" value="XnVNite"/>
-									<listOptionValue builtIn="false" value="XnVFeatures"/>
-									<listOptionValue builtIn="false" value="XnVHandGenerator"/>
+									<listOptionValue builtIn="false" value="XnVNite_1_3_1"/>
+									<listOptionValue builtIn="false" value="XnVFeatures_1_3_1"/>
+									<listOptionValue builtIn="false" value="XnVHandGenerator_1_3_1"/>
 								</option>
 								<option id="macosx.cpp.link.option.other.93030701" name="Other options (-Xlinker [option])" superClass="macosx.cpp.link.option.other" valueType="stringList">
 									<listOptionValue builtIn="false" value="${CINDER_PATH}/lib/libcinder_d.a ${CINDER_PATH}/blocks/Cinder-OpenCV/lib/macosx/libcv.a ${CINDER_PATH}/blocks/Cinder-OpenCV/lib/macosx/libcxcore.a"/>
 								</option>
 								<option id="macosx.cpp.link.option.userobjs.442770415" name="Other objects" superClass="macosx.cpp.link.option.userobjs"/>
-								<option id="macosx.cpp.link.option.flags.1225849360" name="Linker flags" superClass="macosx.cpp.link.option.flags" value="-arch i386 -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework Syphon" valueType="string"/>
+								<option id="macosx.cpp.link.option.flags.1225849360" name="Linker flags" superClass="macosx.cpp.link.option.flags" value="-arch i386 -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio" valueType="string"/>
 								<option id="macosx.cpp.link.option.shared.606778117" name="Shared (-dynamiclib)" superClass="macosx.cpp.link.option.shared" value="false" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.macosx.cpp.linker.input.804648217" superClass="cdt.managedbuild.tool.macosx.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -54,6 +55,7 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.1876156651" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base">
 								<option id="gnu.cpp.compiler.option.include.paths.522131004" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="${CINDER_PATH}/boost"/>
+									<listOptionValue builtIn="false" value="&quot;${NITE_PATH}/include&quot;"/>
 									<listOptionValue builtIn="false" value="${CINDER_PATH}/blocks/Cinder-OpenCV/include"/>
 									<listOptionValue builtIn="false" value="${CINDER_PATH}/include"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/OpenNI}&quot;"/>
